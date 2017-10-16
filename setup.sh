@@ -29,8 +29,41 @@ dockutil --remove 'Numbers' --allhomes
 dockutil --remove 'Keynote' --allhomes
 dockutil --remove 'Pages' --allhomes
 
+# Enable tap to click (Trackpad) for this user and for the login screen
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true # show file extensions
+defaults write NSGlobalDomain _HIHideMenuBar -bool true # Hide menu bar
+defaults write NSGlobalDomain AppleInterfaceStyle Dark # Dark interface
+
+# Disable emdash and smart quotes
+defaults write 'Apple Global Domain' NSAutomaticDashSubstitutionEnabled 0
+defaults write 'Apple Global Domain' NSAutomaticQuoteSubstitutionEnabled 0
+
+defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms) # Keyboard repeat rate
+defaults write -g KeyRepeat -int 2 # normal minimum is 2 (30 ms) # Keyboard repeat rate
+defaults write -g ApplePressAndHoldEnabled -bool false # Don't hold key for other letters
+
+#defaults write com.apple.dock workspaces-auto-swoosh -bool NO # Disable cmd+tab between spaces
+#defaults write com.apple.dock mru-spaces -bool false # Don't rerrange spaces based on use
+defaults write com.apple.dock autohide-time-modifier -float 0 # Dock hide delay
+defaults write com.apple.dock autohide -bool true # Dock hide automatically
+defaults write com.apple.dock tilesize -int 30 # Dock height
+defaults write com.apple.dock minimize-to-application -bool true # minimise into application icoe
+defaults write com.apple.dock wvous-bl-corner -int 10 # Lock hot corner
+defaults write com.apple.finder AppleShowAllFiles true # show hidden files
+defaults write com.apple.TextEdit RichText -int 0 # plain text in textedit
+defaults write com.apple.ImageCapture disableHotPlug -bool true # don't open photos
+sudo launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist # disable itunes buttons
+
+defaults write com.apple.screensaver askForPasswordDelay 0
+defaults write com.apple.screensaver askForPassword -bool true
+
 killall Dock
 killall Finder
+killall SystemUIServer
 
 brew install node
 brew install yarn --without-node
