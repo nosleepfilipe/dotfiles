@@ -65,6 +65,7 @@ killall Dock
 killall Finder
 killall SystemUIServer
 
+brew cask install caffeine
 brew install node
 brew install yarn --without-node
 brew install git
