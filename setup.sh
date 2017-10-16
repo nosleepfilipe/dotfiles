@@ -133,3 +133,7 @@ git remote set-url origin git@github.com:nosleepfilipe/dotfiles.git
 sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
 
 git clone https://github.com/rupa/z.git .z.sh
+
+# Iterm
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/Dropbox/Mackup/Library/Preferences"
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
