@@ -99,6 +99,8 @@ brew install mackup
 
 yarn install -g n
 yarn global add standard
+yarn global add instant-markdown-d
+yarn global add diff-so-fancy
 # yarn install -g jshint
 # yarn install -g eslint
 # yarn install -g babel-eslint
