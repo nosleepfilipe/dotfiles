@@ -71,7 +71,7 @@ brew install git
 brew install vim
 brew unlink vim && brew link vim
 brew install cmake # for YCM
-(cd cd ~/.vim/bundle/YouCompleteMe; ./install.py --tern-completer )
+(cd cd ~/.vim/bundle/YouCompleteMe; chmod +x install.py; ./install.py --tern-completer )
 brew install hub              # Hub from github
 brew install the_silver_searcher
 brew install mongo
@@ -101,6 +101,7 @@ yarn install -g n
 yarn global add standard
 yarn global add instant-markdown-d
 yarn global add diff-so-fancy
+yarn global add serverless
 # yarn install -g jshint
 # yarn install -g eslint
 # yarn install -g babel-eslint
@@ -126,3 +127,8 @@ curl https://install.meteor.com/ | sh
 
 # This repo
 git remote set-url origin git@github.com:nosleepfilipe/dotfiles.git
+
+
+sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
+
+git clone https://github.com/rupa/z.git .z.sh
