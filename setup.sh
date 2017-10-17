@@ -76,6 +76,7 @@ brew install cmake # for YCM
 brew install hub              # Hub from github
 brew install the_silver_searcher
 brew install mongo
+brew install git-extras
 brew services start mongodb
 brew cask install spotify
 brew cask install slack
