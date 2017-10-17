@@ -75,6 +75,7 @@ brew install cmake # for YCM
 (cd cd ~/.vim/bundle/YouCompleteMe; chmod +x install.py; ./install.py --tern-completer )
 brew install hub              # Hub from github
 brew install the_silver_searcher
+brew install httpie
 brew install mongo
 brew install git-extras
 brew services start mongodb
