@@ -86,9 +86,9 @@ brew cask install iterm2
 brew cask install dropbox
 brew cask install sublime-text
 brew install transmission
-brew cask install heroku-toolbelt
+#brew cask install heroku-toolbelt
 brew cask install google-chrome
-brew cask install unrarx
+#brew cask install unrarx
 brew cask install vlc
 brew cask install screenhero
 brew cask install grandperspective
