@@ -99,7 +99,8 @@ brew cask install moom
 brew cask install notion
 brew cask install robomongo
 brew install mackup
-
+# install ctags for vim plugin
+brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 
 yarn install -g n
 yarn global add standard
