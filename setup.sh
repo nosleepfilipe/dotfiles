@@ -125,7 +125,7 @@ mackup restore
 
 // backup your ~/.ssh/ dir
 
-
+source ~/.bash_profile
 
 curl https://install.meteor.com/ | sh
 
