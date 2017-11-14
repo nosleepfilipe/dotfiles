@@ -83,6 +83,7 @@ brew cask install gitify
 brew cask install spotify
 brew cask install slack
 brew cask install iterm2
+brew cask install caffeine
 brew cask install dropbox
 brew cask install sublime-text
 brew install transmission
