@@ -79,6 +79,7 @@ brew install httpie
 brew install mongo
 brew install git-extras
 brew services start mongodb
+brew cask install bitbar
 brew cask install gitify
 brew cask install spotify
 brew cask install slack
