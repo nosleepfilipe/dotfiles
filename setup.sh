@@ -65,46 +65,50 @@ killall Dock
 killall Finder
 killall SystemUIServer
 
-brew cask install caffeine
+brew install --cask  caffeine
 brew install node
-brew install yarn --without-node
+brew install yarn
 brew install git
 brew install vim
 brew unlink vim && brew link vim
 brew install cmake # for YCM
 (cd cd ~/.vim/bundle/YouCompleteMe; chmod +x install.py; ./install.py --tern-completer )
 brew install hub              # Hub from github
-brew install the_silver_searcher
 brew install httpie
 brew install mongo
 brew install git-extras
 brew services start mongodb
-brew cask install bitbar
-brew cask install gitify
-brew cask install spotify
-brew cask install slack
-brew cask install iterm2
-brew cask install caffeine
-brew cask install dropbox
-brew cask install sublime-text
+brew install --cask  bitbar
+brew install --cask  gitify
+brew install --cask  spotify
+brew install --cask insomnia
+brew install --cask  slack
+brew install --cask  iterm2
+brew install --cask  caffeine
+brew install --cask little-snitch
+brew tap mongodb/brew
+brew install --cask  dropbox
+brew install --cask protonvpn
+brew install --cask visual-studio-code
+brew install --cask  sublime-text
 brew install transmission
-#brew cask install heroku-toolbelt
-brew cask install google-chrome
-#brew cask install unrarx
-brew cask install vlc
-brew cask install screenhero
-brew cask install grandperspective
-brew cask install istat-menus
-brew cask install 1password
-#brew cask install duet
-brew cask install moom
-brew cask install notion
-brew cask install robomongo
+#brew install --cask  heroku-toolbelt
+brew install --cask  google-chrome
+#brew install --cask  unrarx
+brew install --cask  vlc
+brew install --cask  grandperspective
+brew install --cask  istat-menus
+brew install --cask  1password
+#brew install --cask  duet
+brew install --cask  moom
+brew install --cask  notion
+brew install --cask robo-3t
 brew install mackup
 # install ctags for vim plugin
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
-
-yarn install -g n
+# install nvm 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+yarn global add n
 yarn global add standard
 yarn global add instant-markdown-d
 yarn global add diff-so-fancy
@@ -115,8 +119,8 @@ yarn global add serverless
 # yarn install -g eslint-plugin-react
 n stable
 #git clone git@github.com:rupa/z.git ~/.dotfiles/scripts/z
-yarn install gh -g        # More github functionality
-yarn install -g mongo-hacker
+yarn global add gh        # More github functionality
+yarn global add mongo-hacker
 rm -rf ~/.ssh; ln -s ~/Dropbox/.ssh ~/.ssh
 sudo chmod 600 ~/.ssh/*
 pip install howdoi
